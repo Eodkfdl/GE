@@ -4,7 +4,7 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-[CustomEditor (typeof (WeatherMap))]
+/*[CustomEditor (typeof (WeatherMap))]
 public class WeatherMapEditor : Editor {
 
     WeatherMap weather;
@@ -37,4 +37,4 @@ public class WeatherMapEditor : Editor {
         weather = (WeatherMap) target;
     }
 
-}
+}*/
