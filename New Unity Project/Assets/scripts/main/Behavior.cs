@@ -17,7 +17,7 @@ public class Behavior : MonoBehaviour
     {
         // 이동하고자하는 좌표 값과 현재 내 위치의 차이를 구한다.
         float dis = Vector3.Distance(transform.position, targetPos);
-        if (dis >= 0.5f) // 차이가 아직 있다면
+        if (dis != 0) // 차이가 아직 있다면
         {
             // 캐릭터를 이동시킨다.
             targetPos.y = transform.position.y;
@@ -31,10 +31,15 @@ public class Behavior : MonoBehaviour
 
     public void Turn(Vector3 targetPos)
     {
+        
         // 캐릭터를 이동하고자 하는 좌표값 방향으로 회전시킨다
         Vector3 dir = targetPos - transform.position;
-        Vector3 dirXZ = new Vector3(dir.x, 0f, dir.z);
+        Vector3 dirXZ = new Vector3(dir.x, 0, dir.z);
         Quaternion targetRot = Quaternion.LookRotation(dirXZ);
-        rigid.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, 550.0f * Time.deltaTime);
+        if (Vector3.Distance(transform.position, targetPos) > 1.5f)
+        {
+            rigid.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, 550.0f * Time.deltaTime);
+          
+        }
     }
 }

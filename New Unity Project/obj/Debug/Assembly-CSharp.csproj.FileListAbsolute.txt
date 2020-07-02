@@ -256,3 +256,12 @@ C:\git\GE\New Unity Project\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.c
 C:\git\GE\New Unity Project\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\git\GE\New Unity Project\obj\Debug\Assembly-CSharp.dll
 C:\git\GE\New Unity Project\obj\Debug\Assembly-CSharp.pdb
+C:\git\GE\New Unity Project\Temp\bin\Debug\Unity.Timeline.Editor.pdb
+C:\git\GE\New Unity Project\Temp\bin\Debug\Unity.VSCode.Editor.pdb
+C:\git\GE\New Unity Project\Temp\bin\Debug\Unity.TextMeshPro.Editor.pdb
+C:\git\GE\New Unity Project\Temp\bin\Debug\UnityEngine.UI.pdb
+C:\git\GE\New Unity Project\Temp\bin\Debug\Unity.Timeline.pdb
+C:\git\GE\New Unity Project\Temp\bin\Debug\Unity.CollabProxy.Editor.pdb
+C:\git\GE\New Unity Project\Temp\bin\Debug\Unity.Rider.Editor.pdb
+C:\git\GE\New Unity Project\Temp\bin\Debug\Unity.TextMeshPro.pdb
+C:\git\GE\New Unity Project\Temp\bin\Debug\UnityEditor.UI.pdb

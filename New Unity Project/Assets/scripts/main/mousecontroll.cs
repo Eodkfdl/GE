@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 public class mousecontroll : MonoBehaviour
 {
     public float rotateSpeed = 10.0f;// 마우스 회전속도
@@ -11,8 +12,7 @@ public class mousecontroll : MonoBehaviour
     private Behavior behavior; // 캐릭터의 행동 스크립트
     private Camera mainCamera; // 메인 카메라
     private Vector3 targetPos; // 캐릭터의 이동 타겟 위치
-    
-  
+    private float runtime;
     private void Zoom()
     {
         float distance = Input.GetAxis("Mouse ScrollWheel") * -1 * zoomSpeed;
@@ -63,18 +63,30 @@ public class mousecontroll : MonoBehaviour
             if (Physics.Raycast(ray, out hit, 10000f))
             {
                 targetPos = hit.point;
+                runtime = 3;
             }
+          
         }
-
-        // 캐릭터가 움직이고 있다면
-        if (behavior.Run(targetPos))
+        if (Input.GetMouseButtonDown(2))
         {
+            SceneManager.LoadScene("3");
+        }
+        // 캐릭터가 움직이고 있다면
+        
+        if (
+            behavior.Run(targetPos))
+        {
+
             // 회전도 같이 시켜준다
             behavior.Turn(targetPos);
+            
+
+            
         }
         else
         {
             // 캐릭터 애니메이션(정지 상태)
+            
            // behavior.SetAnim(PlayerAnim.ANIM_IDLE);
         }
 
