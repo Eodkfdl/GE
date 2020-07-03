@@ -4,6 +4,8 @@ ScriptsOnlyBuild:
     - Behavior
     - EndingText
     - Game
+    - animal
+    - house
     - mousecontroll
     - start
     Unity.TextMeshPro.dll:
@@ -21,7 +23,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -64,21 +65,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10280}
     - Class: 114
-      Script: {instanceID: 10618}
+      Script: {instanceID: 10620}
     - Class: 114
-      Script: {instanceID: 10806}
+      Script: {instanceID: 10812}
     - Class: 114
-      Script: {instanceID: 10820}
+      Script: {instanceID: 10826}
     - Class: 114
-      Script: {instanceID: 10982}
+      Script: {instanceID: 10988}
     - Class: 114
-      Script: {instanceID: 11040}
+      Script: {instanceID: 11046}
     - Class: 114
-      Script: {instanceID: 11186}
+      Script: {instanceID: 11192}
     - Class: 114
-      Script: {instanceID: 11374}
+      Script: {instanceID: 11380}
     - Class: 114
-      Script: {instanceID: 11384}
+      Script: {instanceID: 11390}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -143,19 +144,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10260}
     - Class: 114
-      Script: {instanceID: 10618}
+      Script: {instanceID: 10444}
     - Class: 114
-      Script: {instanceID: 10806}
+      Script: {instanceID: 10620}
     - Class: 114
-      Script: {instanceID: 10982}
+      Script: {instanceID: 10666}
     - Class: 114
-      Script: {instanceID: 11040}
+      Script: {instanceID: 10812}
     - Class: 114
-      Script: {instanceID: 11326}
+      Script: {instanceID: 10988}
     - Class: 114
-      Script: {instanceID: 11384}
+      Script: {instanceID: 11046}
     - Class: 114
-      Script: {instanceID: 11410}
+      Script: {instanceID: 11332}
+    - Class: 114
+      Script: {instanceID: 11390}
+    - Class: 114
+      Script: {instanceID: 11416}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -206,15 +211,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10260}
     - Class: 114
-      Script: {instanceID: 10806}
+      Script: {instanceID: 10812}
     - Class: 114
-      Script: {instanceID: 10932}
+      Script: {instanceID: 10938}
     - Class: 114
-      Script: {instanceID: 10982}
+      Script: {instanceID: 10988}
     - Class: 114
-      Script: {instanceID: 11040}
+      Script: {instanceID: 11046}
     - Class: 114
-      Script: {instanceID: 11384}
+      Script: {instanceID: 11390}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -436,6 +441,12 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
+      Hash: d485c84b6a420ffb32d2bee8340640a3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: animal
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -470,6 +481,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: house
   - hash:
       serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
@@ -652,7 +669,7 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: 4bfa28198be58307f4b088509a2f70e0
+      Hash: ee9c3cf3aaf2c50f26a014049414227b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Game
