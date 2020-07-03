@@ -24,4 +24,12 @@ fsm(구현예정)
 
 패배조건이 미구현되어 치트키로 휠을 누르면 다음화면으로 넘어가집니다.
 
+외부에셋사용
+프로젝트에포함된 downloadasset폴더내부 파일 
+rpg polypack 
+LOWPOLY MEDIEVAL WORLD - Lowpoly Medieval Peasants 
+Farm Animals Set
+을 사용하였습니다.
 
+자체제작
+ui 및 텍스쳐
