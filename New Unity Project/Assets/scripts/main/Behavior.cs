@@ -36,6 +36,10 @@ public class Behavior : MonoBehaviour
         Vector3 dir = targetPos - transform.position;
         Vector3 dirXZ = new Vector3(dir.x, 0, dir.z);
         Quaternion targetRot = Quaternion.LookRotation(dirXZ);
+        if (dirXZ.x<0.001 || dirXZ.z < 0.001)
+        {
+            dirXZ = new Vector3(0, 0, 0);
+        }
         if (Vector3.Distance(transform.position, targetPos) > 1.5f)
         {
             rigid.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, 550.0f * Time.deltaTime);

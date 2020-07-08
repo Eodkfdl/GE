@@ -6,9 +6,10 @@ public static class Gamedata
 {
     private static int gamestatus;
     private static int Result;
+    
     public static int cown, duckn, chickenn, sheepn;
     public static string str;
-
+    public static int clear;
     public static int Gamestatus
    
     {

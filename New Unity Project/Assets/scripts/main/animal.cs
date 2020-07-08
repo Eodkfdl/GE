@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class animal : MonoBehaviour
 {
-    public bool start;
+    public int start;
     Vector3 targetpos;
+    GameObject temp;
     // Start is called before the first frame update
     void Start()
     {
-        start = false;
-        targetpos.x = 66.11f;
-        targetpos.y = 22.0f;
-
-        targetpos.z = 44.0f;
+        start = 0;
     }
 
     // Update is called once per frame
@@ -21,11 +18,14 @@ public class animal : MonoBehaviour
     {
         if (gameObject.name == "ani" + Gamedata.str)
         {
-            start = true;
+            start = 1;
+           temp  = GameObject.Find("player").transform.GetChild(Gamedata.clear).gameObject;
         }
 
-        if (start)
+        if (start>0)
         {
+            targetpos = temp.transform.position;
+   
             transform.localPosition = Vector3.MoveTowards(transform.position, targetpos, 10 * Time.deltaTime);
         }
     }

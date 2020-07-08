@@ -17,7 +17,8 @@ public class house : MonoBehaviour
         {
         print(gameObject.name);
             hitnum += 1;
-            if (hitnum > 3)
+            //hitnum 만큼 부딪혔다면 해당 동물의 울음소리와함께 문이열리는소리를 낸다
+            if (hitnum > 2)
             {
                 Gamedata.str = gameObject.name;
             }

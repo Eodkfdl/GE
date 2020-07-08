@@ -9,14 +9,12 @@ public class Game : MonoBehaviour
     public RawImage cow,sheep,duck, chicken;
     public TextMeshProUGUI Day;
     [SerializeField] float gamestatus;
-    public int clear;
+    
     public GameObject temp;
     // Start is called before the first frame update
     void Start()
     {
-        clear = 0;
-            gamestatus = 0;
-            cow.CrossFadeAlpha(1, 4, true);
+       Gamedata.clear = 0;
     }
     
     // Update is called once per frame
@@ -37,37 +35,41 @@ public class Game : MonoBehaviour
         if (Gamedata.str=="cow")
         {
             Gamedata.cown = 1;
-            clear += 1;
+
             Gamedata.str = "";
             cow.CrossFadeAlpha(0, 4, true);
+            Gamedata.clear += 1;
         }
         if (Gamedata.str == "duck")
         {
 
             duck.CrossFadeAlpha(0, 4, true);
             Gamedata.duckn = 1;
-            clear += 1;
+          
             Gamedata.str = "";
+            Gamedata.clear += 1;
         }
         if (Gamedata.str == "sheep")
         {
 
             sheep.CrossFadeAlpha(0, 4, true);
             Gamedata.sheepn = 1;
-            clear += 1;
+        
             Gamedata.str = "";
+            Gamedata.clear += 1;
         }
         if (Gamedata.str == "chicken")
         {
 
             chicken.CrossFadeAlpha(0, 4, true);
             Gamedata.chickenn = 1;
-            clear += 1;
+            
             Gamedata.str = "";
+            Gamedata.clear += 1;
         }
        
 
-        if (clear >3)//이겼을때
+        if (Gamedata.clear >3)//이겼을때
         {
             SceneManager.LoadScene("3");
         }
