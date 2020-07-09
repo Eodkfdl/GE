@@ -12,7 +12,7 @@ public class mousecontroll : MonoBehaviour
     private Behavior behavior; // 캐릭터의 행동 스크립트
     private Camera mainCamera; // 메인 카메라
     private Vector3 targetPos; // 캐릭터의 이동 타겟 위치
-    private float runtime;
+   
     private void Zoom()
     {
         float distance = Input.GetAxis("Mouse ScrollWheel") * -1 * zoomSpeed;
@@ -63,7 +63,7 @@ public class mousecontroll : MonoBehaviour
             if (Physics.Raycast(ray, out hit, 10000f))
             {
                 targetPos = hit.point;
-                runtime = 3;
+       
             }
           
         }

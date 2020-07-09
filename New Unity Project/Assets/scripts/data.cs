@@ -8,8 +8,6 @@ public static class Gamedata
     private static int Result;
     private static int Clear;
 
-    public static int cown, duckn, chickenn, sheepn;
-    public static string str;
 
     public static int clear
        {

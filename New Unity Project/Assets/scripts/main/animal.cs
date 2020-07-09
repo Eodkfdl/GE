@@ -20,13 +20,13 @@ public class animal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameObject.name == "ani" + Gamedata.str)//해당 오브젝트의 움직임시작
+        if (gameObject.name == "ani" + GameManager.instance.str&&start==0)//해당 오브젝트의 움직임시작
         {
            start = 1;
            temp  = GameObject.Find("player").transform.GetChild(Gamedata.clear).gameObject;//플레이어를 따라 다닐 위치를 불러온다
         }
 
-        if (start>-1)
+        if (start>0)
         {
             targetpos = temp.transform.position;//지속적으로 움직이는 플레이어에따라 해당 타겟을 따라다닌다.
           

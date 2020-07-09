@@ -10,12 +10,7 @@ public class start : MonoBehaviour
     void Start()
     {
         notice.alpha = 0;
-        Gamedata.chickenn = 0;
-        Gamedata.cown = 0;
-        Gamedata.duckn = 0;
-        Gamedata.sheepn = 0;
-        Gamedata.str="";
-        Gamedata.Gamestatus = 0;
+        Gamedata.result = 0;
     }
     // Update is called once per frame
     void Update()

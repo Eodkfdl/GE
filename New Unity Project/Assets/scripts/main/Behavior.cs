@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Behavior : MonoBehaviour
 {
+    
     public float speed = 2.0f;
     private Rigidbody rigid;
     Vector3 dir;
@@ -11,6 +13,7 @@ public class Behavior : MonoBehaviour
     Quaternion targetRot ;
     void Awake()
     {
+
         rigid = GetComponent<Rigidbody>();
 
     }
