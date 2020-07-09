@@ -10,7 +10,8 @@ public class house : MonoBehaviour
     {
         hitnum = 0;
     }
-    private void OnTriggerExit(Collider collision)
+    
+    private void OnTriggerEnter(Collider collision)
     {
         // 부딛히는 collision을 가진 객체의 태그가 "Player Missile"일 경우
         if (collision.CompareTag("Player"))
@@ -28,7 +29,5 @@ public class house : MonoBehaviour
 
     
               // Update is called once per frame
-        void Update()
-    {
-    }
+       
 }

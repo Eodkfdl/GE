@@ -6,7 +6,9 @@ public class Behavior : MonoBehaviour
 {
     public float speed = 2.0f;
     private Rigidbody rigid;
-
+    Vector3 dir;
+    Vector3 dirXZ ;
+    Quaternion targetRot ;
     void Awake()
     {
         rigid = GetComponent<Rigidbody>();
@@ -33,16 +35,17 @@ public class Behavior : MonoBehaviour
     {
         
         // 캐릭터를 이동하고자 하는 좌표값 방향으로 회전시킨다
-        Vector3 dir = targetPos - transform.position;
-        Vector3 dirXZ = new Vector3(dir.x, 0, dir.z);
-        Quaternion targetRot = Quaternion.LookRotation(dirXZ);
+         dir = targetPos - transform.position;
+         dirXZ = new Vector3(dir.x, 0, dir.z);
+        if(dirXZ.magnitude>0)
+         targetRot = Quaternion.LookRotation(dirXZ);
         if (dirXZ.x<0.001 || dirXZ.z < 0.001)
         {
             dirXZ = new Vector3(0, 0, 0);
         }
-        if (Vector3.Distance(transform.position, targetPos) > 1.5f)
+        if (Vector3.Distance(transform.position, targetPos) > 0.2f)
         {
-            rigid.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, 550.0f * Time.deltaTime);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, 550.0f * Time.deltaTime);
           
         }
     }
