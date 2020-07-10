@@ -19,9 +19,9 @@ Textmeshpro 이용하여 한글 머터리얼을 만듬 해당 텍스트를 ui활
 게임상태에 대한 정보를 저장하는 스크립트에서 get set을 이용한 해당 프로퍼티 접근 및 읽기 쓰기
 fsm- enemy를 상태머신을 통해 idle,chase,patroll,gotta로 관리함
 이벤트핸들
-싱글톤 패턴 : 점수 정보를 가지고 있는 등 포괄적 관리를 하고 있는 GameManager 클래스
+싱글톤 패턴 : 점수 정보를 가지고 있는 등 포괄적 관리를 하고 있는 GameManager 클래스를 통한 게임 정보관리
  TextMeshPro를 이용한 한글 머태리얼 생성, Image Component, InputComponent, button Animation (메인메뉴)
-에니메이션
+에니메이션-에너미 걷기,뛰기,아이들구현
 
 4.구현 실패부분 :
 Waypoint오브젝트를 이용하여 에너미 걸어다니기
@@ -33,6 +33,5 @@ rpg polypack
 LOWPOLY MEDIEVAL WORLD - Lowpoly Medieval Peasants 
 Farm Animals Set
 을 사용하였습니다.
-자체제작
-ui 및 텍스쳐
+
 
