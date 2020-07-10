@@ -8,30 +8,31 @@
 3마리 이상의 동물이 해방되면  데이브는 승리합니다
 아저씨에게 잡힐 경우 날짜가 하루씩 지나며 3일이 지나면 데이브는 잡아 먹히게 됩니다.
 
-2. 조작방법: 휠로 줌인 줌아웃 , 왼쪽클릭으로 이동입니다.
+2. 조작방법: 휠로 줌인 줌아웃 , 왼쪽클릭으로 이동입니다. 집의 문을 두드려 동물들을 해방시킵니다. 4마리의 동물을 모두 해방시키면 승리합니다.
 
 3.강의내용 중 사용된 내용:
 게임오브젝트들의 관리 
-ugui를이용한 ui만들기-textmeshpro 이용하여 택스트 에니메이션구현
+Textmeshpro 이용하여 한글 머터리얼을 만듬 해당 텍스트를 ui활용
 쿼터니안을 이용한 이동,회전
 리기드바디와 콜라이더를 이용한 물리처리
 씬매니저를통한 씬관리
 게임상태에 대한 정보를 저장하는 스크립트에서 get set을 이용한 해당 프로퍼티 접근 및 읽기 쓰기
-fsm(구현예정)
+fsm- enemy를 상태머신을 통해 idle,chase,patroll,gotta로 관리함
 이벤트핸들
 싱글톤 패턴 : 점수 정보를 가지고 있는 등 포괄적 관리를 하고 있는 GameManager 클래스
+ TextMeshPro를 이용한 한글 머태리얼 생성, Image Component, InputComponent, button Animation (메인메뉴)
+에니메이션
 
- Rigidbody를 이용한 플레이어 이동
- UI - TextMeshPro를 이용한 한글 머태리얼 생성, Image Component, InputComponent, button Animation
+4.구현 실패부분 :
+Waypoint오브젝트를 이용하여 에너미 걸어다니기
+패배조건을 통한 종료
 
-패배조건이 미구현되어 치트키로 휠을 누르면 다음화면으로 넘어가집니다.
-
-외부에셋사용
+5.외부에셋사용:
 프로젝트에포함된 downloadasset폴더내부 파일 
 rpg polypack 
 LOWPOLY MEDIEVAL WORLD - Lowpoly Medieval Peasants 
 Farm Animals Set
 을 사용하였습니다.
-
 자체제작
 ui 및 텍스쳐
+
