@@ -170,10 +170,15 @@ public class fsmEenemy : MonoBehaviour
 
             }
         }
-        else { waynum += 1; }
+        else {
+            waynum += 1;
+            temp = GameObject.Find("waypoint").transform.GetChild(waynum).gameObject;
+                }
         if(waynum > 14)
         {
             waynum = 1;
+
+            temp = GameObject.Find("waypoint").transform.GetChild(waynum).gameObject;
         }
     }
     private void patrollTrigger(Collider other)
