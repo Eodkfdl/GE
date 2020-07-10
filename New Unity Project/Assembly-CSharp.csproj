@@ -62,8 +62,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\idle.cs" />
     <Compile Include="Assets\scripts\data.cs" />
     <Compile Include="Assets\scripts\EndingText.cs" />
+    <Compile Include="Assets\scripts\EventSubscriber.cs" />
     <Compile Include="Assets\scripts\FSMMg.cs" />
     <Compile Include="Assets\scripts\GameManager.cs" />
     <Compile Include="Assets\scripts\main\animal.cs" />
